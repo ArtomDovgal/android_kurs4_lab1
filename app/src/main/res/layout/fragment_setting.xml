@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_gravity="center"
+            android:height="40sp"
+            android:gravity="center"
+            android:text="@string/setting"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/count_questions_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/first_number_of_questions"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/count_questions_seekbar"
+            style="@android:style/Widget.Material.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:max="10"
+            android:min="5"
+            android:progress="5" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/language_ua"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/language_group"
+            android:layout_width="match_parent"
+            android:layout_height="121dp">
+
+            <RadioButton
+                android:id="@+id/english_radio_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/english"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/german_radio_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/german"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/time_timer_ua"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/timer_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/time20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10sp"
+                android:text="20с"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/time30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10sp"
+                android:text="30с"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/time60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10sp"
+                android:text="60с"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/test_with_variants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:height="60dp"
+            android:text="@string/test_with_variants" />
+
+        <Button
+            android:id="@+id/test_with_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+            android:height="60dp"
+            android:text="@string/test_with_input" />
+
+    </LinearLayout>
+
+</FrameLayout>
